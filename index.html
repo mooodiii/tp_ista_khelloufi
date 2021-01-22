@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation json parse</title>
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Formulaire</h1>
+    <div class="formulaire">
+        <form action="/index.html" method="POST">
+            <div>
+                <label for="nom">Nom: </label>
+                <input type="text" id="nom"> (*)
+            </div>
+            <div>
+                <label for="resid">Residence: </label>
+                <input type="text" id="resid"> (*)
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="text" id="email">
+            </div>
+            <div>
+                <label for="age">Age: </label>
+                <input type="text" id="age">
+            </div>
+            <div>
+                Langue Parlee:
+                <input type="checkbox" name="fr" id="fr">
+                <label for="fr">FR</label>
+                <input type="checkbox" name="ar" id="ar">
+                <label for="fr">AR</label>
+                <input type="checkbox" name="eng" id="eng">
+                <label for="fr">ENG</label>
+            </div>
+            <div>
+                <label for="profession">Profession: </label>
+                <select name="profession" id="profession">
+                    <option selected disabled>Selectionner une option</option>
+                    <option value="docteur">Docteur</option>
+                    <option value="professeur">Professeur</option>
+                    <option value="comptable">Comptable</option>
+                    <option value="ingénieur">Ingénieur</option>
+                    <option value="bijoutier">Bijoutier</option>
+                </select>
+            </div>
+            <div>
+                <label>Formulaire: </label>
+                <input type="button" value="Envoyer">
+                <input type="button" value="Interrompre">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
