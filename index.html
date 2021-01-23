@@ -16,27 +16,27 @@
         <form action="/index.html" method="POST">
             <div>
                 <label for="nom">Nom: </label>
-                <input type="text" id="nom"> (*)
+                <input type="text" id="nom" required> (*)
             </div>
             <div>
                 <label for="resid">Residence: </label>
-                <input type="text" id="resid"> (*)
+                <input type="text" id="resid" required> (*)
             </div>
             <div>
                 <label for="email">Email: </label>
-                <input type="text" id="email">
+                <input type="email" id="email">
             </div>
             <div>
                 <label for="age">Age: </label>
-                <input type="text" id="age">
+                <input type="number" id="age">
             </div>
             <div>
                 Langue Parlee:
-                <input type="checkbox" name="fr" id="fr">
+                <input type="checkbox" name="check" id="fr" value="Francais">
                 <label for="fr">FR</label>
-                <input type="checkbox" name="ar" id="ar">
+                <input type="checkbox" name="check" id="ar" value="arabic">
                 <label for="fr">AR</label>
-                <input type="checkbox" name="eng" id="eng">
+                <input type="checkbox" name="check" id="eng" value="english">
                 <label for="fr">ENG</label>
             </div>
             <div>
@@ -52,15 +52,13 @@
             </div>
             <div>
                 <label>Formulaire: </label>
-                <input type="button" value="Envoyer">
-                <input type="button" value="Interrompre">
+                <input id="send" type="button" value="Envoyer">
+                <input id="cancel" type="button" value="Interrompre">
             </div>
         </form>
     </div>
 
-    <div id="d1">
-
-    </div>
+    <div id="d1"></div>
 </body>
 
 </html>
