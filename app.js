@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
             Div.innerHTML = `<p>Nom: ${nom.value} <br>
             Residence: ${residence.value} <br>
             Email: ${email.value} <br>
-            Langue parler: ${langue.toString()}</p>`;
+            Langue parler: ${langue}</p>`;
             objet.nom = nom.value;
             objet.residence = residence.value;
             objet.email = email.value;
